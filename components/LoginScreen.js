@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import { Text, View } from 'native-base';
 import { postLogin, getProjects } from '../services/requests';
 import API from '../services/requests';
-import { StyleSheet, ScrollView, Button, TextInput } from 'react-native';
+import {
+  StyleSheet,
+  ScrollView,
+  Button,
+  TextInput,
+  ImageBackground
+} from 'react-native';
 // import { connect } from 'react-redux';
 // import { addLogin, addPassword } from '../services/Root/actions/place';
 
@@ -37,38 +43,42 @@ export default class LoginScreen extends Component {
   render() {
     return (
       <View style={styles.main}>
-        <View style={styles.header}>
-          <Text style={styles.HeaderText}>LOGIN</Text>
-        </View>
-        <View style={styles.content}>
-          <TextInput
-            style={styles.inputStyle}
-            placeholder="Enter your login"
-            onChangeText={login => this.setState({ login })}
-            value={this.state.login}
-          />
-          <TextInput
-            style={styles.inputStyle}
-            placeholder="Enter your password"
-            onChangeText={password => this.setState({ password })}
-            value={this.state.password}
-            secureTextEntry={true}
-          />
-          <View style={styles.buttonContainerSingIn}>
-            {Platform.OS == 'ios' ? (
-              <Button onPress={this.singIn} title="Sing In" color="#FFF" />
-            ) : (
-              <Button onPress={this.singIn} title="Submit" />
-            )}
+        <ImageBackground
+          source={require('../images/walking-5c7fe61746e0fb000140a51d.jpg')}
+          style={{ width: '100%', height: '100%' }}>
+          <View style={styles.header}>
+            <Text style={styles.HeaderText}>Login</Text>
           </View>
-          <View style={styles.buttonContainerSingUp}>
-            {Platform.OS == 'ios' ? (
-              <Button onPress={this.trackTime} title="Sing UP" color="#FFF" />
-            ) : (
-              <Button onPress={this.trackTime} title="Submit" />
-            )}
+          <View style={styles.content}>
+            <TextInput
+              style={styles.inputStyle}
+              placeholder="Enter your login"
+              onChangeText={login => this.setState({ login })}
+              value={this.state.login}
+            />
+            <TextInput
+              style={styles.inputStyle}
+              placeholder="Enter your password"
+              onChangeText={password => this.setState({ password })}
+              value={this.state.password}
+              secureTextEntry={true}
+            />
+            <View style={styles.buttonContainerSingIn}>
+              {Platform.OS == 'ios' ? (
+                <Button onPress={this.singIn} title="Sing In" color="#FFF" />
+              ) : (
+                <Button onPress={this.singIn} title="Submit" />
+              )}
+            </View>
+            <View style={styles.buttonContainerSingUp}>
+              {Platform.OS == 'ios' ? (
+                <Button onPress={this.trackTime} title="Sing UP" color="#FFF" />
+              ) : (
+                <Button onPress={this.trackTime} title="Submit" />
+              )}
+            </View>
           </View>
-        </View>
+        </ImageBackground>
       </View>
     );
   }
@@ -78,15 +88,9 @@ const styles = StyleSheet.create({
     height: 40,
     width: '50%',
     borderColor: '#FFF',
+    borderWidth: 1,
     borderRadius: 5,
-    marginTop: 20,
-
-    ...Platform.select({
-      ios: {
-        backgroundColor: '#2ec79e'
-      },
-      android: {}
-    })
+    marginTop: 20
   },
   buttonContainerSingIn: {
     height: 40,
@@ -105,13 +109,13 @@ const styles = StyleSheet.create({
   inputStyle: {
     height: 50,
     width: '70%',
-    borderColor: '#DDD',
+    borderColor: '#FFF',
     borderStyle: 'solid',
     borderWidth: 1,
     borderRadius: 5,
     padding: 5,
     margin: 10,
-    backgroundColor: 'white'
+    backgroundColor: 'rgba(255,255,255,0.7)'
   },
   content: {
     height: '80%',
@@ -124,7 +128,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     height: 100,
-    backgroundColor: '#32c95a'
+    backgroundColor: '#32c95a',
+    borderBottomWidth: 3,
+    borderBottomColor: 'rgba(100,100,100,0.5)'
   },
   HeaderText: {
     color: '#FFF',

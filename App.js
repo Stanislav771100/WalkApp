@@ -13,7 +13,7 @@ import {
   ScrollView,
   View,
   Text,
-  StatusBar,
+  StatusBar
 } from 'react-native';
 
 import {
@@ -21,20 +21,18 @@ import {
   LearnMoreLinks,
   Colors,
   DebugInstructions,
-  ReloadInstructions,
+  ReloadInstructions
 } from 'react-native/Libraries/NewAppScreen';
 import LoginScreen from './components/LoginScreen';
 
 const App: () => React$Node = () => {
   return (
     <>
-  <LoginScreen />
+      <LoginScreen />
     </>
   );
 };
 
-const styles = StyleSheet.create({
-  
-});
+const styles = StyleSheet.create({});
 
 export default App;
