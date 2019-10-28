@@ -32,7 +32,7 @@ export default class Registration extends Component {
       password: this.state.password
     })
       .then(response => {
-        console.log(response);
+        console.log(response); 
       })
       .catch(error => {
         console.dir(error);
