@@ -17,8 +17,12 @@ export function postLogin(data) {
 class API {
   static postLogin(data) {
     console.log('ddf');
-    return axios(`/users`, {
-      method: 'get'
+    return axios({
+      method: 'post',
+      url: '/login',
+      data: {
+        user: data
+      }
     }).catch(error => {
       console.dir(error);
     });

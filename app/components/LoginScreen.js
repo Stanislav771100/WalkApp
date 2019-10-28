@@ -1,7 +1,8 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, { Component } from 'react';
 import { Text, View } from 'native-base';
-import { postLogin, getProjects } from '../services/requests';
-import API from '../services/requests';
+import { postLogin, getProjects } from '../services/api';
+import API from '../services/api';
 import {
   StyleSheet,
   ScrollView,
@@ -23,13 +24,11 @@ export default class LoginScreen extends Component {
       password: ''
     };
   }
-  componentDidMount() {
-    this.singIn();
-  }
+
   singIn = () => {
     console.log('d');
     API.postLogin({
-      username: this.state.login,
+      email: this.state.login,
       password: this.state.password
     })
       .then(response => {
@@ -44,7 +43,7 @@ export default class LoginScreen extends Component {
     return (
       <View style={styles.main}>
         <ImageBackground
-          source={require('../images/walking-5c7fe61746e0fb000140a51d.jpg')}
+          source={require('../assets/images/walking-5c7fe61746e0fb000140a51d.jpg')}
           style={{ width: '100%', height: '100%' }}>
           <View style={styles.header}>
             <Text style={styles.HeaderText}>Login</Text>
@@ -72,7 +71,7 @@ export default class LoginScreen extends Component {
             </View>
             <View style={styles.buttonContainerSingUp}>
               {Platform.OS == 'ios' ? (
-                <Button onPress={this.trackTime} title="Sing UP" color="#FFF" />
+                <Button onPress={this.trackTime} title="Sing Up" color="#FFF" />
               ) : (
                 <Button onPress={this.trackTime} title="Submit" />
               )}
