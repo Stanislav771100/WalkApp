@@ -22,7 +22,7 @@ export default class Registration extends Component {
       user: '',
       login: '',
       password: ''
-    };
+    }; 
   }
 
   singIn = () => {
