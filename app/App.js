@@ -8,12 +8,12 @@
 
 import React from 'react';
 
-import LoginScreen from './components/LoginScreen';
+import Routes from './services/Routes';
 
 const App: () => React$Node = () => {
   return (
     <>
-      <LoginScreen />
+      <Routes />
     </>
   );
 };

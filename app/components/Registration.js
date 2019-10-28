@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, { Component } from 'react';
 import { Text, View } from 'native-base';
-import { Actions } from 'react-native-router-flux';
+import { postLogin, getProjects } from '../services/api';
 import API from '../services/api';
 import {
   StyleSheet,
@@ -13,7 +13,7 @@ import {
 // import { connect } from 'react-redux';
 // import { addLogin, addPassword } from '../services/Root/actions/place';
 
-export default class LoginScreen extends Component {
+export default class Registration extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,9 +40,6 @@ export default class LoginScreen extends Component {
   };
 
   render() {
-    const onPressNext = () => {
-      Actions.Registration();
-    };
     return (
       <View style={styles.main}>
         <ImageBackground
@@ -62,18 +59,18 @@ export default class LoginScreen extends Component {
               value={this.state.password}
               secureTextEntry={true}
             />
+            <TextInput
+              style={styles.inputStyle}
+              placeholder="Enter your password again"
+              onChangeText={password => this.setState({ password })}
+              value={this.state.password}
+              secureTextEntry={true}
+            />
             <View style={styles.buttonContainerSingIn}>
               {Platform.OS == 'ios' ? (
-                <Button onPress={this.singIn} title="Sing In" color="#FFF" />
+                <Button onPress={this.singIn} title="Submit" color="#FFF" />
               ) : (
-                <Button onPress={this.singIn} title="Sing In" />
-              )}
-            </View>
-            <View style={styles.buttonContainerSingUp}>
-              {Platform.OS == 'ios' ? (
-                <Button onPress={onPressNext} title="Sing Up" color="#FFF" />
-              ) : (
-                <Button onPress={onPressNext} title="Sing Up" />
+                <Button onPress={this.singIn} title="Submit" />
               )}
             </View>
           </View>
