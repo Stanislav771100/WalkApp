@@ -3,6 +3,7 @@ import { Container, Header, Tab, Tabs, TabHeading, Footer } from 'native-base';
 import { StyleSheet } from 'react-native';
 import LoginScreen from '../components/LoginScreen';
 import Registration from '../components/Registration';
+import Main from '../components/Main';
 import { Router, Scene } from 'react-native-router-flux';
 export default class Routes extends Component {
   constructor(props) {
@@ -21,10 +22,11 @@ export default class Routes extends Component {
           <Scene
             key="LoginScreen"
             component={LoginScreen}
-            initial={true}
+            
             title="Login"
           />
           <Scene key="Registration" component={Registration} />
+          <Scene key="Main" component={Main} initial={true}/>
         </Scene>
       </Router>
     );
