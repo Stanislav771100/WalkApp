@@ -32,7 +32,6 @@ target 'ReactWalkApp' do
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
   pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
 
-  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
   pod 'react-native-google-maps', :path => '../node_modules/react-native-maps'
   pod 'GoogleMaps'  # Uncomment this line if you want to support GoogleMaps on iOS
   pod 'Google-Maps-iOS-Utils' # Uncomment this line if you want to support GoogleMaps on iOS
@@ -41,7 +40,6 @@ target 'ReactWalkApp' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
 
   pre_install do |installer|
     # workaround for CocoaPods/CocoaPods#3289

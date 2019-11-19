@@ -19,12 +19,7 @@ export default class Routes extends Component {
         titleStyle={{ color: '#FFF', fontSize: 22 }}
         sceneStyle={{ color: 'FFF' }}>
         <Scene key="root">
-          <Scene
-            key="LoginScreen"
-            component={LoginScreen}
-            
-            title="Login"
-          />
+          <Scene key="LoginScreen" component={LoginScreen} title="Login" />
           <Scene key="Registration" component={Registration} />
           <Scene key="Main" component={Main} initial={true}/>
         </Scene>

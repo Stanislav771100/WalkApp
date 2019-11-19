@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* ReactWalkAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactWalkAppTests.m */; };
 		086EC073BDD9446A9EB893E8 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D711600CECC24A6A9CF08140 /* AntDesign.ttf */; };
@@ -21,6 +20,7 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D93241C2369C9C800429DF8 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D93241B2369C9C800429DF8 /* main.jsbundle */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReactWalkAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactWalkAppTests.m */; };
 		466514564FAB4F08B7954B99 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9893310A6E240FCA1B2FC66 /* Octicons.ttf */; };
 		4F65DDF100D1435E872F221F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE61C4584D774BD3AB4431B7 /* EvilIcons.ttf */; };
@@ -56,7 +56,7 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "ReactWalkApp-tvOS";
 		};
-		2D1A72F2236996C300AEB9E6 /* PBXContainerItemProxy */ = {
+		2D9324172369C3E400429DF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2D1A72EE236996C300AEB9E6 /* AirMaps.xcodeproj */;
 			proxyType = 2;
@@ -66,7 +66,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* ReactWalkAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactWalkAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ReactWalkAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactWalkAppTests.m; sourceTree = "<group>"; };
@@ -85,7 +84,8 @@
 		27381642EF51B16D86BAE9F7 /* Pods-ReactWalkApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactWalkApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactWalkApp-tvOS/Pods-ReactWalkApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactWalkApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactWalkApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactWalkApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactWalkApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D1A72EE236996C300AEB9E6 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = ../AirMaps.xcodeproj; sourceTree = "<group>"; };
+		2D1A72EE236996C300AEB9E6 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
+		2D93241B2369C9C800429DF8 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		337B80FB649877B5E0C312AE /* libPods-ReactWalkAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactWalkAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3546B7D5037DA9D7732AF51B /* libPods-ReactWalkApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactWalkApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF1ACCB663F2CFED7278C1E /* libPods-ReactWalkApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactWalkApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +171,7 @@
 		13B07FAE1A68108700A75B9A /* ReactWalkApp */ = {
 			isa = PBXGroup;
 			children = (
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				2D93241B2369C9C800429DF8 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -195,19 +195,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2D1A729C2369922E00AEB9E6 /* AirGoogleMaps */ = {
+		2D9324142369C3E400429DF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D1A72EE236996C300AEB9E6 /* AirMaps.xcodeproj */,
-			);
-			name = AirGoogleMaps;
-			path = "../node_modules/react-native-maps/lib/ios/AirGoogleMaps";
-			sourceTree = "<group>";
-		};
-		2D1A72EF236996C300AEB9E6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2D1A72F3236996C300AEB9E6 /* libAirMaps.a */,
+				2D9324182369C3E400429DF8 /* libAirMaps.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,7 +221,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				2D1A729C2369922E00AEB9E6 /* AirGoogleMaps */,
+				2D1A72EE236996C300AEB9E6 /* AirMaps.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -410,7 +401,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 2D1A72EF236996C300AEB9E6 /* Products */;
+					ProductGroup = 2D9324142369C3E400429DF8 /* Products */;
 					ProjectRef = 2D1A72EE236996C300AEB9E6 /* AirMaps.xcodeproj */;
 				},
 			);
@@ -425,11 +416,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		2D1A72F3236996C300AEB9E6 /* libAirMaps.a */ = {
+		2D9324182369C3E400429DF8 /* libAirMaps.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libAirMaps.a;
-			remoteRef = 2D1A72F2236996C300AEB9E6 /* PBXContainerItemProxy */;
+			remoteRef = 2D9324172369C3E400429DF8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -465,6 +456,7 @@
 				C4371D4FDD0A452C82FDE2E7 /* Roboto_medium.ttf in Resources */,
 				A9B04E9593E24801885F6C4B /* Roboto.ttf in Resources */,
 				187611302B214543A98A782F /* rubicon-icon-font.ttf in Resources */,
+				2D93241C2369C9C800429DF8 /* main.jsbundle in Resources */,
 				FFB4B5C77F9D4C6C8BCEFF70 /* SimpleLineIcons.ttf in Resources */,
 				5AA29016637B47A5AB0E1BC4 /* Zocial.ttf in Resources */,
 			);
@@ -965,10 +957,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1018,6 +1007,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
