@@ -14,7 +14,7 @@
     "native-base": "^2.13.8",
     "react": "16.9.0",
     "react-maps-google": "^0.3.2",
-    "react-native": "0.61.2",
+    "react-native": "0.61.3",
     "react-native-axios": "^0.17.1",
     "react-native-google-maps-directions": "^2.1.1",
     "react-native-linear-gradient": "2.0.0",
